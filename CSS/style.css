@@ -2,15 +2,17 @@
     display: flex;
     background-color:white;
     background-position: center;
-    -ms-flex-align: baseline;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-around;
     width: 100%;
+    align-items: baseline;
+    align-content: stretch;
 }
 .logo{
     display: flex;
     width: 180px;
     height: 180px;
+    justify-content: flex-start;
 }
 .leftside{
     display: flex;
@@ -23,6 +25,8 @@
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #2d72c2;
+    align-self: baseline;
+    font-size: xx-large;
     
 }
 .rightside{
@@ -34,16 +38,28 @@
 button{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #FF9F41;
+    block-size: 50px;
+    inline-size: 300px;
+    align-self:baseline-postion;
 
 }
 .footer{
     display: flex;
     flex-direction: row;
-    background-color: orange;
+    background-color: #F4ECE2;
+    justify-content:baseline;
 }
 .leftFoot .middleFoot .iconFoot .rightFoot .bottomFoot{
     background-color: orange;
     display: flex;
+}
+.iconFoot{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    padding-block: 25px;
+    margin-inline: 50px;
 }
 .leftFoot {
     display: flex;
@@ -68,6 +84,7 @@ button{
     padding: 50px;
     align-items: flex-start;
     font-display: center;
+    font-size: xx-large;
 }
 #rightHero{
     display: flex;
@@ -85,6 +102,7 @@ button{
     padding: 100px;
     font-weight: 100;
     color: white;
+    font-size: x-large;
 }
 .Foster{
     display: flex;
@@ -100,14 +118,38 @@ button{
 }
 .appNotice{
     color: #FF9F41;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
 }
 .fosterHeader{
-    color: blue;
+    color: #2D72C2;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
 }
 .appButton{
     background-color: white;
-    color: blue;
+    color: #2D72C2;
     display: flex;
     padding: 25px;
+    border-radius: 50px;
+    justify-content: center;
+    border-color: #2D72C2 ;
+    border-width: 2px;
+    border-style:groove;
+    opacity: 4;
+}
+.rightFoot ul il{
+    justify-content: flex-end;
+    flex-direction: row;
+    color: #2D72C2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    justify-items: end;
+    justify-items: right;
+}
+#subFooter{
+    display: flex;
+    background-color: #FBD148;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
